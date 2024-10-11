@@ -40,6 +40,7 @@ export const RecipeSearch = () => {
             const data: ApiResponse = await response.json();
             setApiData(data.hits);
         } catch (error) {
+            console.log(error)
             setErrorState(true);
         } finally {
             setLoading(false);
